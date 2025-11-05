@@ -83,6 +83,13 @@ public class UserController {
         ));
     }
 
+    @PostMapping("/logout")
+    public ResponseEntity<?> logout(HttpSession session) {
+        session.invalidate();
+
+        return ResponseEntity.ok().body(Map.of("message", "Logged out"));
+    }
+
     @GetMapping("/me")
     public ResponseEntity<?> getCurrentUser(HttpSession session) {
         Long userId = (Long) session.getAttribute("userId");

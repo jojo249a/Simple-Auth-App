@@ -6,6 +6,7 @@ nav {
     border-bottom: 1px solid var(--grey2-color);
     background: rgb(26, 26, 26);
     color: var(--white-color);
+    height: 5rem;
 }
 nav ul {
     list-style: none;

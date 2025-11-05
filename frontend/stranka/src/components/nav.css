@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    align-items: center;
+    padding-inline: 2rem;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey2-color);
+    background: rgb(26, 26, 26);
+    color: var(--white-color);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 1.2rem;
+    gap: 2rem;
+}
+nav ul li {
+    position: relative;
+    text-decoration: none;
+}
+nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    background-color: var(--white-color);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    transition: 0.2s;
+}
+nav ul li:hover::after {
+    width: 100%;
+}
+.home-link {
+    font-size: 1.5rem;
+    transition: 0.2s;
+}
+.home-link:hover {
+    scale: 1.1;
+}
+.home-icon {
+    margin-right: 1rem;
+}

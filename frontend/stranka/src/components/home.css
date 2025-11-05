@@ -1,0 +1,14 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.users-wrapper {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    gap: 1rem;
+}
